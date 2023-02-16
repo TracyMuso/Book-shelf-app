@@ -14,6 +14,12 @@ default: &default
 development:
   <<: *default
   database: book_shelf_development
+  host : localhost
+  port: 5432
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: psql888tm
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -21,6 +27,12 @@ development:
 test:
   <<: *default
   database: book_shelf_test
+  host : localhost
+  port: 5432
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: psql888tm
 
 production:
   <<: *default
