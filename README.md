@@ -64,7 +64,7 @@ After you're finished please remove all the comments and instructions!
 # 📖 MelodyRentals Backend <a name="about-project"></a>
 ![Melody Rentals-logo](./IMG_4089.png)
 
-**Book shelf** is a book app. users can make reading lists with their fourite books
+**Book shelf** is a reading list app. It allows users to make a collection of books and with it make organized reading lists based on different genres. Books and reading lists can be set to either public or private. Public reading lists can have likes only. A user can like and comments on a certain book. Only a logged in user can add books, create reading lists and actively engage with the other content on the website.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -73,7 +73,7 @@ After you're finished please remove all the comments and instructions!
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://reactjs.org/">Ruby on Rails</a></li>
   </ul>
 </details>
 
@@ -95,11 +95,11 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- **[Musical Instrumetns List endpoint]**
-- **[Devise authentication to access Reservations]**
-- **[JWT Authorization upon login and register]**
-- **[Admin Users can add and remove instruments]**
-- **[Authenticated Users can reserve instruments]**
+- **[Public and private reading lists]**
+- **[Devise for user authentication]**
+- **[Ability to delete books, reading lists and comments ]**
+- **[Admin Users are moderators and have all access]**
+- **[Authenticated users can make reading lists, add books and engage with other users content]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,7 +135,7 @@ After you're finished please remove all the comments and instructions!
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 # for the API
-- [Live Demo :rocket:](https://melody-rentals.onrender.com/api/v1) :smiley:
+- [Live Demo coming soon :rocket:](https://livedemolink.com) :smiley:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -158,17 +158,16 @@ Install this project with:
 ```sh
   bundle install
 ```
-- Generate a secret key using `rails secret`
+**Optional, if you have privacy concerns**
 - Create a  `.env` file with the following content:
 ```
 POSTGRES_USER=postgres
 # If you declared a password when creating the database:
 POSTGRES_PASSWORD=YourPassword
 POSTGRES_HOST=localhost
-POSTGRES_DB=Hello_Rails_Backend_development
-POSTGRES_TEST_DB=Hello_Rails_Backend_test
-# Devise secret key
-DEVISE_JWT_SECRET_KEY=Secret Key you generated
+POSTGRES_DB=book_shelf_development
+POSTGRES_TEST_DB=book_shelf_test
+
 ```
 
 Create Database (Mandatory)
@@ -190,7 +189,7 @@ rails db:seed
 To run the project, execute the following command:
 
 ```sh
-   rails s -p 3001 # # for serving the API on localhost:3001
+   rails s -p 3000 # # for serving the API on localhost:3000
 ```
 
 Run tests
@@ -208,6 +207,16 @@ bundle exec rspec
 
 - GitHub: [@TracyMuso](https://github.com/TracyMuso)
 - LinkedIn: [Tracy Musongole](https://www.linkedin.com/in/tracy-muso/)
+- Medium: [@musongoletracy](https://www.medium.com/@musongoletracy)
+
+
+
+##  Future features <a name="future-features"></a>
+
+- Ability to add star ratings on a book
+- Ability to follow users
+- Ability to unlike books and reading lists
+- Ability to create private book clubs with other users
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -259,7 +268,7 @@ I would like to thank:
 
 - **How I can run tests?**
   
-    - After cloning repository, run `bundle` and then run `rspec` to run the tests. 
+    - After cloning repository, run `bundle` and then run `rspec test-file-directory` for a specific file or `rspec` to run all the tests. 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
