@@ -104,16 +104,16 @@ After you're finished please remove all the comments and instructions!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Website Mockup 📱 💻 🖥️ <a name="screenshots"></a>
-
+Coming soon
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Kanban Board -->
 ## <img src="https://cdn-icons-png.flaticon.com/512/5360/5360804.png" width="23" height="20"/> Kanban Board <a name="kanban-board"></a>
 
-- We are a **group of 5 people**, So we have devided each task for track of the project.
+- I have divided each task for tracking progress of the project, 
 ###  Kanban Board
- - [Kanban Board ](https://github.com/users/TracyMuso/Book-shelf-app/11)
+ - [Kanban Board ](https://github.com/users/TracyMuso/projects/4)
 
 
 
@@ -121,10 +121,10 @@ After you're finished please remove all the comments and instructions!
 
 <!-- API Docs -->
 
-## <img src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/spiral-notepad_1f5d2-fe0f.png" width="23" height="20"/> API Documentation<a name="api-docs"></a>
+<!-- ## <img src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/spiral-notepad_1f5d2-fe0f.png" width="23" height="20"/> API Documentation<a name="api-docs"></a>
 
 - The API documentation of the project [Melody Rentals API-Docs](http://127.0.0.1:3000/api-docs/index.html)
-![api-docs](https://user-images.githubusercontent.com/101523582/215738304-fc6826cc-802d-45e6-b12b-7af872e623f1.png)
+![api-docs](https://user-images.githubusercontent.com/101523582/215738304-fc6826cc-802d-45e6-b12b-7af872e623f1.png) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -169,6 +169,7 @@ POSTGRES_DB=book_shelf_development
 POSTGRES_TEST_DB=book_shelf_test
 
 ```
+- Add `<% ENV['POSTGRES_PASSWORD'] %>` for your password, then add the rest in a similar way
 
 Create Database (Mandatory)
 
@@ -246,10 +247,7 @@ Give a ⭐️ if you like this project!
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank:
-- [Microverse](https://www.microverse.org/)
-- Code Reviewers
+- Myself
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

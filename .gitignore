@@ -7,6 +7,9 @@
 # Ignore bundler config.
 /.bundle
 
+# ignore env file
+.env
+
 resources.rb
 
 # Ignore the default SQLite database.
