@@ -10,6 +10,8 @@
 # ignore env file
 .env
 
+node_modules/
+
 resources.rb
 
 # Ignore the default SQLite database.
