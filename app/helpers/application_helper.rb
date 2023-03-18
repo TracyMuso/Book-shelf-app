@@ -1,6 +1,6 @@
 module ApplicationHelper
 
-    def avatar_url_for(user, opts = {})
+  def avatar_url_for(user, opts = {})
     size = opts[:size || 32]
 
     if user.avatar.attached?

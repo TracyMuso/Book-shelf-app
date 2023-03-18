@@ -1,10 +1,15 @@
-<div>
-    <h1>All users</h1>
+<div class="p-2">
+
+    <%= render "shared/navbar" %>
+
+    <h1 class="text-center">All users</h1>
+    <div class="p-2 mx-auto my-3">
     <% @users.each do |user| %>
-        <div>
+        <div class="">
             <h2><%= user.name %></h2>
             <p><%= user.email %></p>
             <p><%= image_tag avatar_url_for(user, size: 32) %></p>
         </div>
     <% end %>
+    </div>
 </div>
