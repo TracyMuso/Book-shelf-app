@@ -12,6 +12,18 @@
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
 
+  <div class="row">
+    <div class="col-sm-2">
+      <%= image_tag avatar_url_for(current_user, size: 128), class: "rounded-circle m-4" %>
+    </div>
+    <div class="col-sm-10">
+      <div class="form-group">
+        <%= f.label :avatar %>
+        <%= f.file_field :avatar %>
+      </div>
+    </div>
+  </div>
+
   <div class="field">
     <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
     <%= f.password_field :password, autocomplete: "new-password" %>
