@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+    background-color: #c539b4;
+ }
+
+ .user-card {
+    background-color: #f5d5ae;
+    border: solid 1px #ef9a53;
+    text-decoration: none;
+ }
+
+ .log-out {
+    color: #000
+ }
+
+
+@media (max-width: 450px) {
+    .user-name {
+        display: none;
+    }
+
+    nav form {
+        padding: 0.1rem;
+    }
+}

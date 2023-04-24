@@ -1,0 +1,16 @@
+<div class="p-2">
+
+    <%= render "shared/navbar" %>
+
+    <h1 class="text-center">All users</h1>
+    <div class="p-2 mx-auto my-3">
+    <% @users.each do |user| %>
+        <%= link_to user_path(user), class: 'card user-card' do %> 
+            <div class="p-2 d-flex align-items-center">
+              <span class="mx-2 inline"><%= image_tag avatar_url_for(user, size: 32), class: 't' %></span>
+              <h2 class="inline mx-2"><%= user.name %></h2>
+            </div>
+        <% end %>
+    <% end %>
+    </div>
+</div>
